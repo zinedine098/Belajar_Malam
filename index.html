@@ -1,1 +1,85 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Ibnu Wawan - Portfolio</title>
+  <link rel="stylesheet" href="style.css" />
+  <script defer src="script.js"></script>
+</head>
+<body>
+  <header class="navbar">
+    <div class="logo">Ibnu<span>Wawan</span></div>
+    <nav>
+      <ul>
+        <li><a href="#home">Beranda</a></li>
+        <li><a href="#about">Tentang</a></li>
+        <li><a href="#skills">Keahlian</a></li>
+        <li><a href="#projects">Projek</a></li>
+        <li><a href="#contact">Kontak</a></li>
+      </ul>
+    </nav>
+  </header>
 
+  <section id="home" class="hero">
+    <div class="hero-text">
+      <h1>Halo, Saya <span>Ibnu Wawan</span></h1>
+      <p>Seorang Web Developer yang berfokus pada desain modern dan performa tinggi.</p>
+      <button onclick="scrollToSection('contact')">Hubungi Saya</button>
+    </div>
+  </section>
+
+  <section id="about" class="about">
+    <h2>Tentang Saya</h2>
+    <p>
+      Saya seorang pengembang web yang mencintai teknologi dan desain.
+      Saya membuat website yang cepat, responsif, dan elegan. Tujuan saya adalah
+      menciptakan pengalaman pengguna yang menyenangkan melalui kode yang bersih dan efisien.
+    </p>
+  </section>
+
+  <section id="skills" class="skills">
+    <h2>Keahlian</h2>
+    <div class="skill-list">
+      <div class="skill">HTML</div>
+      <div class="skill">CSS</div>
+      <div class="skill">JavaScript</div>
+      <div class="skill">Python</div>
+      <div class="skill">FastAPI</div>
+      <div class="skill">React</div>
+    </div>
+  </section>
+
+  <section id="projects" class="projects">
+    <h2>Projek</h2>
+    <div class="project-cards">
+      <div class="card">
+        <h3>Portfolio Website</h3>
+        <p>Website pribadi untuk menampilkan karya dan profil profesional.</p>
+      </div>
+      <div class="card">
+        <h3>API Backend</h3>
+        <p>API backend cepat dengan FastAPI untuk sistem manajemen data.</p>
+      </div>
+      <div class="card">
+        <h3>UI Dashboard</h3>
+        <p>Dashboard interaktif menggunakan HTML, CSS, dan JavaScript.</p>
+      </div>
+    </div>
+  </section>
+
+  <section id="contact" class="contact">
+    <h2>Kontak</h2>
+    <form id="contactForm">
+      <input type="text" placeholder="Nama Anda" required />
+      <input type="email" placeholder="Email Anda" required />
+      <textarea placeholder="Pesan Anda..." required></textarea>
+      <button type="submit">Kirim Pesan</button>
+    </form>
+  </section>
+
+  <footer>
+    <p>© 2025 Ibnu Wawan. Semua hak dilindungi.</p>
+  </footer>
+</body>
+</html>
